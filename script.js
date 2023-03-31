@@ -32,11 +32,11 @@ async function searchBikeStations() {
     }
   }
 //If the matches array is empty, it means that no bike stations were found that match the user's input. The code checks if any of the words in the user's input are numbers using the isNaN() function, and if so, joins them together to create a string called invalidEntry. The message variable is then set to a string that informs the user that no bikes were found, along with the invalidEntry string if it exists. Finally, an alert is displayed to the user using the alert() function with the message string and some bike emojis.
-  if (matches.length === 0) {
-    const invalidEntry = userWords.filter(word => isNaN(word)).join(" ");
-    const message = invalidEntry ? `No bikes found for "${invalidEntry}". Please do not use ordinal suffix "2nd" "nd" "4th" "th" Write only number.`;
-    alert(`🚲🛑🚲🛑🚲${message}🚲🛑🚲🛑🚲`);
-  } else {
+if (matches.length === 0) {
+  const invalidEntry = userWords.filter(word => isNaN(word)).join(" ");
+  const message = invalidEntry ? `No bikes found for "${invalidEntry}". Please do not use ordinal suffix "2nd" "nd" "4th" "th". Write only numbers.` : "Please enter a valid number.";
+  alert(`🚲🛑🚲🛑🚲${message}🚲🛑🚲🛑🚲`);
+} else {
 //If the matches array is not empty, it means that one or more bike stations were found that match the user's input. The code retrieves the HTML element with the class "bike.return" using the querySelector() method and stores it in the resultDiv variable. The innerHTML property of resultDiv is then set to an empty string to clear any previous search results.
     const resultDiv = document.querySelector(".bike.return");
     resultDiv.innerHTML = "";
