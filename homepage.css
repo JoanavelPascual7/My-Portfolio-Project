@@ -1,6 +1,5 @@
 
 body {
-    background-image: url('nyc.jpeg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -10,11 +9,27 @@ body {
 
   main {
     max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 120 auto;
+    padding: 120px;
     background-color: black
   }
   
+
+
+
+  Copy code
+  .nyc-photo {
+    max-width: 100%; /* Set the maximum width of the container to 100% */
+    height: auto; /* Let the height of the container adjust automatically */
+  }
+  
+  .main-photo {
+    max-width: 165%; /* Set the maximum width of the image to 100% */
+    height: auto; /* Let the height of the image adjust automatically */
+  }
+
+
+
 
   ul, li {
     list-style-type: none;

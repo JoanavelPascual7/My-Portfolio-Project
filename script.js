@@ -1,4 +1,23 @@
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': 'bc711f39b7msh0fb35f8b19d5c24p1dff2ejsn88b572822097',
+		'X-RapidAPI-Host': 'api-nba-v1.p.rapidapi.com'
+	}
+};
+
+fetch('https://api-nba-v1.p.rapidapi.com/seasons', options)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
+
+
+
+
+
 async function searchBikeStations() {
+
+
   const response = await fetch("http://api.citybik.es/v2/networks/citi-bike-nyc");
   const data = await response.json();
   const bikeStations = data.network.stations;

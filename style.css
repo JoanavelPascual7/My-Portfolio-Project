@@ -19,11 +19,6 @@ border: 3px solid red;
 }
 
 
-.about-me-body {
-  background-color: black;
-  color: white;
-}
-
 
 body {
   display: flex;
