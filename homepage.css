@@ -9,7 +9,7 @@ body {
 /* Set color and font for text */
 body, h1, h2, h3, h4, h5, h6 {
   color: white;
-  font-family: 'Material Symbols Outlined', sans-serif;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
 
 /* Center the main photo and limit its size */
@@ -34,12 +34,20 @@ header {
 }
 
 .my-name {
-  font-size: 30px;
+  font-size: 100px;
+  position: relative;
+  z-index: 1;
 }
 
 .title {
-  font-size: 50px;
-  margin-top: -10px;
+  font-size: 85px;
+  font-family: 'Shadows Into Light', cursive;
+  margin-top: -145px;
+  margin-bottom: -20px;
+  color: white;
+  text-shadow: 0px 0px 20px rgba(255,255,255,0.9), 0px 0px 30px rgba(255,255,255,0.7), 0px 0px 40px rgba(255,255,255,0.5), 0px 0px 50px rgba(255,255,255,0.3);
+  position: relative;
+  z-index: 2;
 }
 
 .top-header-bar {
@@ -61,7 +69,8 @@ header {
 .top-header-bar a {
   text-decoration: none;
   color: white;
-  font-size: 20px;
+  font-family: 'Material Symbols Outlined', sans-serif;
+  font-size: 21px;
   padding: 5px 10px;
   border-radius: 10px;
   background-color: rgba(0,0,0,0.5);
@@ -69,6 +78,10 @@ header {
   padding: 10px 20px;
   transition: all 0.3s ease;
   transform-origin: center center;
+}
+
+.citibike-link{
+  font-family: 'Material Symbols Outlined', sans-serif;
 }
 
 .top-header-bar a:hover {
