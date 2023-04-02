@@ -14,7 +14,6 @@ body {
     color: orange;
     text-shadow: 8px 8px black;
     -webkit-text-stroke: 2.5px black;
-    
   }
   
   
@@ -49,4 +48,135 @@ body {
     color: black;
   }
   
+  /* Overall styles for the bottom-third-container */
+.bottom-third-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 40px;
+    background-color: #1c1c1c;
+    color: white;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Styles for the education box */
+  .education-box {
+    margin-right: 20px;
+  }
+  
+  .education-box h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #f9a602;
+  }
+  
+  .education-box ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .education-box li {
+    margin-bottom: 20px;
+  }
+  
+  .education-box p {
+    margin: 0;
+  }
+  
+  /* Styles for the internship box */
+  .internship-box {
+    flex-grow: 1;
+  }
+  
+  .internship-box h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #0072c6;
+  }
+  
+  .internship-box h5 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #f9a602;
+  }
+  
+  .internship-box p {
+    margin-top: 0;
+  }
+  
+  .internship-box ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .internship-box li {
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for the skills box */
+  .skills-box {
+    margin-left: 20px;
+  }
+  
+  .skills-box h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #0072c6;
+  }
+  
+  .skills-box ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .skills-box li {
+    margin-bottom: 10px;
+  }
+  
+  /* 3D effect for the boxes */
+  .bottom-third-container > div {
+    transition: transform 0.5s;
+  }
+  
+  .bottom-third-container > div:hover {
+    transform: translateY(-10px);
+  }
+  
+
+  
+  .hompage-link a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #0072c6;
+    text-decoration: none;
+    border: 2px solid #0072c6;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hompage-link a:hover {
+    color: #fff;
+    background-color: #0072c6;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    text-shadow: none;
+  }
+  
+  
+  /* Override default link styles */
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
   
