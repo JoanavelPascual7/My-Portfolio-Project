@@ -18,6 +18,27 @@ ul, li {
 border: 3px solid red;
 }
 
+
+.about-me-body {
+  background-color: black;
+  color: white;
+}
+
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Noto Serif', serif;
+
+  background-color: black;
+  color: white
+}
+
+
+
+
+
 .top-header-bar {
   align-items: center;
   border: 2px solid whitesmoke;
