@@ -1,104 +1,94 @@
-
+/* Set background image to NYC skyline */
 body {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-  }
-  
-
-  main {
-    max-width: 800px;
-    margin: 120 auto;
-    padding: 120px;
-    background-color: black
-  }
-  
-
-
-
-  Copy code
-  .nyc-photo {
-    max-width: 100%; /* Set the maximum width of the container to 100% */
-    height: auto; /* Let the height of the container adjust automatically */
-  }
-  
-  .main-photo {
-    max-width: 165%; /* Set the maximum width of the image to 100% */
-    height: auto; /* Let the height of the image adjust automatically */
-  }
-
-
-
-
-  ul, li {
-    list-style-type: none;
-  }
-  
-  title {
-    font-family: 'Anton', sans-serif;
-  }
-
-  .my-name{
-    font-family: 'Delicious Handrawn', cursive;
-  }
-
-.back-home-link-font {
-    font-family: 'Anton', sans-serif;  
+  background-image: url("https://images.unsplash.com/photo-1580260757400-bc8eda3f4809");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-
-
-.about-me-body {
-  background-color: black;
+/* Set color and font for text */
+body, h1, h2, h3, h4, h5, h6 {
   color: white;
+  font-family: 'Material Symbols Outlined', sans-serif;
 }
 
+/* Center the main photo and limit its size */
+.nyc-photo {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
 
+.main-photo {
+  max-width: 80%;
+  height: auto;
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75); /* Add box shadow */
+}
+
+/* Style header and top navigation bar */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.my-name {
+  font-size: 30px;
+}
+
+.title {
+  font-size: 50px;
+  margin-top: -10px;
+}
 
 .top-header-bar {
-  align-items: center;
-  border: 2px solid whitesmoke;
-  /* border-bottom: 2px solid black; */
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  width: 99%;
-  }
-  
-  .top-header-bar > li {
-  /* border: 2px solid black; */
-  font-size: 1.4em;
-  margin-left: 16px;
-  margin-right: 16px;
-  padding: 16px;
-  cursor: pointer;
-  }
-  
-  .top-header-bar > li:hover{
-      color: goldenrod;
-      font-size: 16px
-  }
-
-  .subpage > h1 {
-    font-family: 'Shantell Sans', cursive;
+  margin-top: 30px;
 }
 
-
-.subpage {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+.top-header-bar li {
+  list-style: none;
+  margin: 0px 10px;
 }
 
-.subpage > img {
-    width: 40%;
+.top-header-bar a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.5);
 }
 
-.subpage p {
-    width: 40%;
+.top-header-bar a:hover {
+  background-color: rgba(0,0,0,0.7);
 }
 
-.invisible{
-    display: none;
+/* Style footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.index2-link {
+  margin-top: 20px;
+}
+
+.citibike-link a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.citibike-link a:hover {
+  background-color: rgba(0,0,0,0.7);
+}
+
+ul li {
+  list-style: none;
 }
