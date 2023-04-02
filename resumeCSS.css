@@ -1,0 +1,52 @@
+body {
+    background-color: royalblue;
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+  
+  .name-header {
+    background-image: url('https://new.mta.info/sites/default/files/2021-10/Screen%20Shot%202021-10-19%20at%202.14.23%20PM.png');
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 3rem;
+    color: orange;
+    text-shadow: 8px 8px black;
+    -webkit-text-stroke: 2.5px black;
+    text-stroke: 2px black;
+  }
+  
+  
+  .experience-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .job-box1, .job-box2, .job-box3, .job-box4, .job-box5, .job-box6, .job-box7  {
+    width: calc(25% - 20px);
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 4 4 18px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+  }
+  
+  .job-box1:hover, .job-box2:hover, .job-box3:hover, .job-box4:hover, .job-box5:hover, .job-box6:hover, .job-box7:hover {
+    background-color: orange;
+  }
+  
+  .job-box1:hover h3, .job-box2:hover h3, .job-box3:hover h3, .job-box4:hover h3, .job-box1:hover h5, .job-box2:hover h5, .job-box3:hover h5, .job-box4:hover h5, .job-box5:hover h5, .job-box5:hover h3, .job-box6:hover h5, .job-box6:hover h3, .job-box7:hover h5, .job-box7:hover h3 {
+    color: white;
+  }
+  
+  .job-box1 h3, .job-box2 h3, .job-box3 h3, .job-box4 h3, .job-box1 h5, .job-box2 h5, .job-box3 h5, .job-box4 h5, .job-box5 h5, .job-box5 h3, .job-box6 h5, .job-box6 h3, .job-box7 h5, .job-box7 h3 {
+    color: orange;
+  }
+  
+  .job-box1 p, .job-box2 p, .job-box3 p, .job-box4 p, .job-box5 p, .job-box6 p, .job-box7 p, .job-box1 ul, .job-box2 ul, .job-box3 ul, .job-box4 ul, .job-box5 ul, .job-box6 ul, .job-box7 ul {
+    color: black;
+  }
+  
+  
