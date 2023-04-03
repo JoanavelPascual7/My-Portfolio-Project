@@ -1,0 +1,77 @@
+/* Set a background image of the New York City skyline */
+body {
+  background-image: url("nyc-skyline.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Use the Fira Sans font for headings and the IBM Plex Sans Condensed font for paragraphs */
+h2 {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 5vw;
+  max-width: 100%;
+}
+
+p {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 3vw;
+  max-width: 100%;
+}
+
+/* Set the color of links to yellow and remove the underline */
+a {
+  color: yellow;
+  text-decoration: none;
+}
+
+/* Style the search box */
+.search-box {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+label {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 3vw;
+  max-width: 100%;
+  color: white;
+  margin-right: 10px;
+}
+
+input[type="text"] {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 3vw;
+  padding: 5px;
+  max-width: 100%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+button {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 3vw;
+  padding: 5px 10px;
+  background-color: yellow;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+/* Set the color of text to white and give it a shadow to make it more readable on the background image */
+.bike-stations, .nyc-info, .instructions {
+  margin-top: 20px;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+/* Make the list of search results and the instructions for searching responsive by setting the font size to a smaller size for smaller devices */
+@media only screen and (max-width: 768px) {
+  #searchResults li {
+    font-size: 2vw;
+  }
+
+  .instructions p {
+    font-size: 2vw;
+  }
+}

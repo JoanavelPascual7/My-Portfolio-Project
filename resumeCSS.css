@@ -17,8 +17,6 @@ body {
   }
   
   
-
-  
   .job-box1, .job-box2, .job-box3, .job-box4, .job-box5, .job-box6, .job-box7  {
     width: calc(25% - 20px);
     margin: 10px;
@@ -295,4 +293,3 @@ body {
     }
   }
   
-
