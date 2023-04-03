@@ -13,13 +13,50 @@
       <title>Contact Joanavel Pascual</title>
       <script src="script.js"></script>
 
-      <style>
-        body {
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+    <style>
+              body {
           background-color: black;
           color: white;
         }
-      </style>
+    </style>
+  </head>
+  <body>
+    <h1>Contact Me</h1>
+    <p>Please fill out the form below to send me an email.</p>
+    <form method="post" action="send-email.php">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
 
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+
+    <hr>
+
+    <h2>Connect with me on:</h2>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/your-profile">LinkedIn</a></li>
+      <li><a href="https://www.indeed.com/r/your-resume">Indeed</a></li>
+      <li><a href="https://github.com/your-username">GitHub</a></li>
+    </ul>
+
+    <hr>
+
+    <p>Name: Joanavel Pascual</p>
+    <p>Email: JoanavelPascual@Pursuit.org</p>
+      </div> 
+      </body>
   </head>
   <body class="about-me-body">
     <div class="hompage-link"> 

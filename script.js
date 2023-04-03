@@ -1,9 +1,15 @@
 async function searchBikeStations() {
 
+  const userInput = document.getElementById("searchInput").value.toLowerCase();
+  
+  if (!userInput) {
+    alert("Please enter a search term.");
+    return;
+  }
+
   const response = await fetch("http://api.citybik.es/v2/networks/citi-bike-nyc");
   const data = await response.json();
   const bikeStations = data.network.stations;
-  const userInput = document.getElementById("searchInput").value.toLowerCase();
   const userWords = userInput.split(" ");
 
   let matches = [];
@@ -38,4 +44,3 @@ async function searchBikeStations() {
     }
   }
 }
-
