@@ -296,14 +296,3 @@ body {
   }
   
 
-  h2 {
-    font-size: 5vw; /* Set font-size to 5% of the viewport width */
-    max-width: 100%; /* Set max-width to 100% of the parent container */
-  }
-  
-  @media screen and (max-width: 768px) {
-    h2 {
-      font-size: 4vw; /* Adjust font-size for smaller screens */
-    }
-  }
-  
