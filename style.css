@@ -80,3 +80,105 @@ body {
 .invisible{
     display: none;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inconsolata', monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: black;
+  color: white;
+}
+
+header {
+  text-align: center;
+  margin: 1rem;
+}
+
+main {
+  margin: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h1, h2, h3 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.homepage-link {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  header {
+    margin: 2rem;
+  }
+
+  main {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  section {
+    margin-bottom: 4rem;
+  }
+
+  #introduction img,
+  #tech-passion img,
+  #new-york img,
+  #recommendations img {
+    margin-top: 2rem;
+  }
+
+  #recommendations ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #recommendations li {
+    width: calc(33.33% - 1rem);
+  }
+}

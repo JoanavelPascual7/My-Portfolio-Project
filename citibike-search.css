@@ -173,13 +173,14 @@
     box-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
     }
     
-    
+
   
-  .nyc-info {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+    .nyc-info {
+        max-width: 55%;
+        margin: 20px auto;
+        padding: 20px;
+      }
+      
   
   .attraction {
     display: grid;
@@ -210,3 +211,14 @@
     border-radius: 5px;
     text-decoration:underline
   }
+
+  .attraction-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* creates columns with a minimum width of 250px and a maximum of 1fr */
+    gap: 20px; /* add gap between columns */
+    justify-items: center; /* center content horizontally within each column */
+    align-items: center; /* center content vertically within each row */
+  }
+  
+  
+  
