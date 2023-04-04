@@ -7,7 +7,7 @@ async function searchBikeStations() {
     return;
   }
 
-  const response = await fetch("http://api.citybik.es/v2/networks/citi-bike-nyc");
+  const response = await fetch("https://api.citybik.es/v2/networks/citi-bike-nyc");
   const data = await response.json();
   const bikeStations = data.network.stations;
   const userWords = userInput.split(" ");
