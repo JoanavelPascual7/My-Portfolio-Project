@@ -28,7 +28,6 @@ body {
   }
   
 
-
   .job-box1:hover, .job-box2:hover, .job-box3:hover, .job-box4:hover, .job-box5:hover, .job-box6:hover, .job-box7:hover {
     background-color: orange;
   }
