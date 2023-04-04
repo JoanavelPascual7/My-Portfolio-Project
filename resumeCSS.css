@@ -343,3 +343,42 @@ body {
     max-width: 100%;
   }
 }
+
+
+/* For devices with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+  /* Center the text in the name-header */
+  .name-header {
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  /* Adjust the width and margin of the job-box */
+  .job-box1, .job-box2, .job-box3, .job-box4, .job-box5, .job-box6, .job-box7  {
+    flex-direction: column;
+    align-items: center;
+   padding: 10px;
+  }
+
+.all-job-container{
+  padding-right: -20px;
+}
+
+  /* Center the bottom-third-container */
+  .bottom-third-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  /* Adjust the margin of the education-box and skills-box */
+  .education-box {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .skills-box {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
