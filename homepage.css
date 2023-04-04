@@ -211,8 +211,8 @@ ul li {
 .home-page-text p {
   color: white;
   font-size: 24px;
-  text-shadow: 1px 1px 0 black, 2px 2px 0 gray;
-  -webkit-text-stroke: .5px black;
+  text-shadow: 4px 4px 0 black, 4px 4px 0 black;
+  -webkit-text-stroke: 1px white;
   -webkit-text-fill-color: white;
 }
 
@@ -224,7 +224,8 @@ ul li {
 
   .home-page-text h1,
   .home-page-text p {
-    font-size: 18px;
+    font-size: 20px;
+    font-family: 'Cabin Sketch', cursive;
   }
 }
 
