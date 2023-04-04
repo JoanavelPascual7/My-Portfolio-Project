@@ -1,6 +1,6 @@
 
 @media (max-width: 768px) {
-  /* Use smaller image for smaller screens */
+
   body {
     background-size: cover;
     background-position: center;
@@ -8,28 +8,55 @@
   }
 }
 
-/* Center the main photo and limit its size */
 .nyc-photo {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  border: 2px solid #ccc;
+  box-shadow: 0px 0px 10px #fff;
+  padding: 10px;
+  width: 80%;
+  max-width: 800px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nyc-photo:hover {
+  transform: scale(0.95);
+  box-shadow: 0px 0px 20px #fff;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .main-photo {
   max-width: 80%;
   height: auto;
   box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75); /* Add box shadow */
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  border: 2px solid #ccc;
+  box-shadow: 0px 0px 10px #fff;
+  padding: 10px;
+  width: 80%;
+  max-width: 800px;
+  transition: all 0.3s ease-in-out;
 }
 
 @media (max-width: 768px) {
-  /* Use smaller image for smaller screens */
   .main-photo {
-
-    max-width: 80%;
-    height: auto;
-    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75); /* Add box shadow */
+    max-width: 110%;
+    width: 110%;
   }
 }
+
+
+
+
 
 
 /* Style header and top navigation bar */
@@ -63,6 +90,15 @@ header {
   margin-top: 30px;
   padding-top: 100px;
 }
+
+@media screen and (max-width: 768px) {
+  .top-header-bar {
+    padding-top: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 
 .top-header-bar li {
   list-style: none;
@@ -161,3 +197,34 @@ ul li {
 .Citibike-intro {
   text-align: center;
 }
+
+.home-page-text {
+  background-image: url("https://f4.bcbits.com/img/0024684376_71.jpg");
+  background-size: cover;
+  color: white;
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: -10px;
+}
+
+.home-page-text h1,
+.home-page-text p {
+  color: white;
+  font-size: 24px;
+  text-shadow: 1px 1px 0 black, 2px 2px 0 gray;
+  -webkit-text-stroke: .5px black;
+  -webkit-text-fill-color: white;
+}
+
+@media (max-width: 768px) {
+  .home-page-text {
+    padding: 10px;
+    border-radius: 0;
+  }
+
+  .home-page-text h1,
+  .home-page-text p {
+    font-size: 18px;
+  }
+}
+
