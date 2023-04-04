@@ -123,7 +123,7 @@
     }  
 
 
-/* Center the container using CSS Grid */
+
 .citibike-results {
     display: grid;
     place-items: center;
@@ -131,7 +131,7 @@
     padding: -200px;
   }
   
-  /* Style the list of locations */
+
   .citibike-results ul {
     list-style-type: none;
     padding: 0;
@@ -214,11 +214,28 @@
 
   .attraction-info {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* creates columns with a minimum width of 250px and a maximum of 1fr */
-    gap: 20px; /* add gap between columns */
-    justify-items: center; /* center content horizontally within each column */
-    align-items: center; /* center content vertically within each row */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
+    justify-items: center; 
+    align-items: center; 
   }
   
   
+  .instructions {
+    font-size: 14px; 
+    grid-area: instructions;
+    justify-self: center;
+    align-self: end;
+  }
+  
+  .homepage-link {
+    grid-area: homepage-link;
+    justify-self: center;
+    align-self: start;
+  }
+  
+
+  .citibike-results {
+    overflow: auto;
+  }
   

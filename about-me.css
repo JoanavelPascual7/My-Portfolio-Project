@@ -1,55 +1,131 @@
+
 body {
-    background-color: black;
-    color: white;
+  font-family: 'Cabin Sketch', cursive;
+  color: white;
+  margin: 0;
+  padding: 0;
   }
   
+ 
   header {
-    display: grid;
-    place-items: center;
-    padding: 20px;
+  padding: 20px;
   }
   
+
+  header h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+  }
+  
+
   main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    padding: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   }
   
+
   section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 20px;
-    align-items: center;
-    justify-items: center;
-    text-align: center;
-    padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px 0;
+  border: 3px solid #333;
   }
   
+
+  section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  }
+  
+
   section img {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border: 3px solid #fff;
+    border-style: ridge;
+    border-color: #fff #333 #333 #fff;
+    box-shadow: 3px 3px 3px #888888;
   }
   
+  
+  /* Style the section paragraphs */
+  section p {
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  }
+  
+  /* Style the recommendations list */
   ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   }
   
-  .homepage-link {
+  /* Style the recommendation list items */
+  li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+  }
+  
+  
+  li:before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  color: #333;
+  font-weight: bold;
+  }
+  
+  .hompage-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #333;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #999;
+    padding: 10px;
   }
   
-  .homepage-link a {
+  .hompage-link a {
+    margin-left: 5px;
     color: white;
-    margin-left: 10px;
   }
   
-  .material-symbols-outlined {
-    font-family: 'Material Symbols Outlined';
-    font-size: 24px;
-    color: white;
+
+  @media screen and (max-width: 768px) {
+  header h1 {
+  font-size: 2rem;
+  }
+  section h2 {
+  font-size: 1.5rem;
+  }
+  section p {
+  font-size: 1rem;
+  }
   }
   
+  @media screen and (max-width: 480px) {
+  header h1 {
+  font-size: 1.5rem;
+  }
+  section h2 {
+  font-size: 1.2rem;
+  }
+  section p {
+  font-size: 0.9rem;
+  }
+  }
